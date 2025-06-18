@@ -1,0 +1,93 @@
+<!-- 
+ <Table> <Tr> <Th> <Td> <Caption><Thead><Tbody><Tfoot>Table Tag Attribute : Cellspacing=”...” Cellpadding=”...” Border=”...” Width=”...” Height=”...” Bgcolor=”...”Td, Th Tag Attribute : Colspan, Rowspan, Bgcolor
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>table</h1>
+    <table
+      border="5"
+      width="400px"
+      height="400px"
+      cellspacing="25px"
+      cellpadding="15px"
+      bgcolor="yellow"
+    >
+      <caption>
+        Heroes
+      </caption>
+      <thead>
+        <tr bgcolor="green">
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maths</td>
+          <td rowspan="2">55</td>
+          <td>extra</td>
+          <td rowspan="3">extra</td>
+        </tr>
+        <tr>
+          <td>arts</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>67</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Form tags</h2>
+    <form action="">
+      <div>
+        <label for="userName">Name: </label>
+        <input
+          id="userName"
+          type="text"
+          placeholder="Enter your user name"
+          required
+        />
+      </div>
+      Email: <input disabled type="email" placeholder="enter your email" required />
+      <input type="range" />
+      <br />
+      <input type="file" multiple />
+      <input type="date" />
+      <br />
+      Gender: <input name="gender" type="radio" /> Male
+      <input name="gender" type="radio" /> Female
+      <br />
+      Hobby: <input  type="checkbox" /> Coding
+      <input type="checkbox" /> cycling<input type="checkbox" /> reading
+      <br />
+      <button disabled>Submit</button>
+      <input type="button" value="Login" />
+      <input type="submit" />
+      <input type="reset" />
+      <br>
+      Car:
+      <select name="" id="">
+        <option disabled value="">suzuki</option>
+        <option value="">bmw</option>
+        <option selected value="">audi</option>
+        <option value="">bugati</option>
+      </select>
+      <br>
+      Description:
+      <textarea name="" id=""></textarea>
+    </form>
+  </body>
+</html>
+
+<!-- <Form> <Select> <Option> <Text Area><Button><Input Type=”Text, Email, Password, Tel, Color, Range, File, Date, Radio, Checkbox”/>Button Tag Attribute : Type=”Reset”, Type=”Submit”Required, Selected Attribute -->
