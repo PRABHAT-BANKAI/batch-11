@@ -1,0 +1,93 @@
+<!-- 
+ 	
+Introduction Of CSS  (Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.)
+
+- CSS Type : Internal, Inline, External CSS
+
+- Text Properties : font-family, font-size, font-weight, text-align, line-height, letter-spacing, word-spacing, text-decoration, font-style, text- transform, text-indent, color, list-style
+
+- CSS Apply : <tag>, .class, #id
+
+- Ex : CSS Type & Text Properties Practice
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Internal css -->
+    <!-- css apply priority 
+     id >class>tagname -->
+    <style>
+      p {
+        color: green;
+      }
+      #text {
+        color: #2fc64f;
+      }
+      .text-color {
+        color: rgb(193, 26, 118);
+      }
+      .font {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .size {
+        font-size: 45px;
+        font-style: oblique;
+        text-transform: capitalize;
+        text-transform: lowercase;
+        text-transform: uppercase !important;
+        text-transform: none;
+      }
+      .weight {
+        font-weight: 900;
+        color: yellow;
+      }
+      .align {
+        text-align: center;
+      }
+      #line {
+        color: red;
+        background-color: yellow;
+        line-height: 45px;
+        letter-spacing: 10px;
+        text-decoration: line-through;
+      }
+      .word {
+        word-spacing: 25px;
+
+        text-indent: 65px;
+      }
+      ul {
+        list-style: georgian;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css   have first priority -->
+    <p style="color: red">Hello css</p>
+    <p id="text" class="text-color font">Internal css</p>
+    <h1>heading tag</h1>
+    <p class="size">Font size asdfsa rwqer</p>
+    <p class="weight">Font weight</p>
+    <p class="align">text align</p>
+    <p id="line">line height</p>
+    <p class="word">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque molestiae
+      laborum minima et rerum minus tempora deleniti doloremque quasi alias
+      optio cumque sunt veniam enim, maxime, repellendus eligendi commodi sint.
+    </p>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+  </body>
+</html>
