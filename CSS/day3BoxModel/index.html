@@ -1,0 +1,51 @@
+<!-- 
+ Box Model
+
+- width, height, background-color, content, padding, box-sizing, margin, border, border-radius
+
+- Ex : Create Box Design (Padding, Margin, Content, Border) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: green;
+      }
+      .box-container {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        /* padding :25px */
+        /* padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px; */
+        /* padding: 50px 100px; */
+        /* padding: 10px 20px 30px 40px; */
+        /* padding: 40px; */
+
+        /* border: 2px solid red; */
+        border-width: 22px;
+        border-style: double;
+        border-color: red;
+        margin: 40px 30px 20px 10px;
+        box-sizing: border-box;
+        /* border-radius: 5% 10% 25% 25px; */
+        /* border-radius: 95% 5% 70% 30% / 54% 0% 100% 46% ; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <div class="box-container">
+      <p>Box Model</p>
+    </div>
+  </body>
+</html>
