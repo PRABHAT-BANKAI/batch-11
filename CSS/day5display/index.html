@@ -1,0 +1,49 @@
+<!-- 
+ 	
+Display Properties: block, inline, inline-block, none, visible:hidden  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        /* display: inline; */
+      }
+      .box1 {
+        background-color: blue;
+      }
+      .box2 {
+        background-color: rgb(0, 255, 68);
+      }
+      span {
+        /* display: block; */
+        display: inline-block;
+        background-color: rgb(0, 128, 255);
+        padding: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box">box1</div>
+    <div class="box2 box">box2</div>
+    <!-- <span>heading 1</span>
+    <span>heading 2</span> -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing <span>elit</span>. Tenetur
+      doloremque atque cum deleniti eaque nemo earum fuga, ullam dicta culpa
+      esse fugiat architecto iusto ipsa corrupti aspernatur maxime minus
+      possimus.
+    </p>
+  </body>
+</html>
