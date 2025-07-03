@@ -1,0 +1,129 @@
+<!-- 
+ Selector div,P, Div P, Div > P:First Letter, :First Line, :First Child, :LastChild, :Nth Child(), :Nth Last Child(), ::Selection
+ Combinator selectors (select elements based on a specific relationship between them)
+ 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+
+        /* div,
+        #text {
+          color: red;
+        } */
+
+        /* Descendant combinator (space) */
+        .main-container p {
+          color: blue;
+        }
+        /* Child combinator (>) */
+        .main-container > h2 {
+          color: yellow;
+        }
+        /* Next sibling combinator (+) */
+        .main-container + p {
+          color: green;
+        }
+      }
+      /*  
+      
+      Next sibling combinator (+)
+Subsequent-sibling combinator (~)
+      */
+
+      /* pseudo-element */
+      .text-1::first-letter {
+        color: red;
+        font-size: 25px;
+      }
+      .text-2::first-line {
+        background-color: yellow;
+      }
+      /* pseudo-classes */
+      p:first-child {
+        color: crimson;
+      }
+      p:last-child {
+        color: deeppink;
+      }
+      p:nth-child(3) {
+        color: gold;
+      }
+
+      p::selection {
+        color: red;
+        background-color: yellow;
+      }
+
+      p:hover{
+        color: purple;
+      }
+      h1::before{
+        content: "🙂" ;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>hello</div>
+    <p id="text">world</p> -->
+
+    <div class="main-container">
+      <p>main para1</p>
+      <h2>hello</h2>
+      <div>
+        <p>main inside para2</p>
+        <p>main inside para3</p>
+        <h2>hello</h2>
+        <h3>hello2</h3>
+        <p>main inside para4</p>
+        <div>
+          <p>main inside para5</p>
+          <h2>hello</h2>
+        </div>
+      </div>
+      <h2>helo</h2>
+      <p class="text-1">Batman</p>
+      <p class="text-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quidem
+        veritatis in perspiciatis nulla facilis natus magni accusamus vitae,
+        modi, ipsa quae illum adipisci laborum praesentium inventore nesciunt
+        aperiam architecto!
+      </p>
+    </div>
+
+    <div class="main-card">
+      <p>para1</p>
+      <p>para2</p>
+      <p>para3</p>
+      <div>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+        <p>para7</p>
+      </div>
+    </div>
+
+    <h2>last</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora
+      voluptate accusantium distinctio facilis? Enim, veritatis, non iusto magni
+      deleniti repellat iure quam impedit vero minima inventore excepturi
+      nostrum? Deleniti! Animi, nisi aliquid accusamus beatae, reiciendis minima
+      fugiat quasi fuga voluptatem eligendi sint sequi sed? Earum dolore vel
+      ipsa harum beatae, impedit, iusto temporibus repudiandae laudantium porro
+      sed vero adipisci? Impedit porro illo explicabo quo sint tenetur tempora
+      expedita accusamus reprehenderit dolorem consequatur autem praesentium rem
+      dignissimos repudiandae magni aut laudantium voluptates blanditiis quas
+      molestias, vel corrupti ipsam? Dolorum, debitis.
+    </p>
+    <h1>Hello</h1>
+  </body>
+</html>
