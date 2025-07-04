@@ -1,0 +1,72 @@
+<!-- 
+ Position static, Absolute, Relative, Fixed, Sticky, Z Index, Overflow
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 500px;
+        width: 500px;
+        background-color: yellow;
+        position: relative;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        background-color: rgb(27, 103, 24);
+        position: absolute;
+        /* top,right,bottom,left */
+        right: 120px;
+        bottom: 20px;
+      }
+      .inner-container {
+        background-color: purple;
+        height: 400px;
+        width: 400px;
+        position: relative;
+        left: 250px;
+      }
+      .fix {
+        background-color: rgb(23, 84, 170);
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+      }
+      .box4 {
+        height: 800px;
+        width: 100px;
+        border: 1px solid black;
+      }
+      .sticky{
+        background-color: blue;
+        position: sticky;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="fix">fixed position</div>
+    <div class="box4">
+      <div class="sticky">sticky</div>
+    </div>
+    <div class="box4"></div>
+  </body>
+</html>
