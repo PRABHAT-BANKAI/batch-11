@@ -1,0 +1,82 @@
+<!-- Before, After, Transform, Hover & Transition
+
+- Transform Property : translate, rotate, scale, skew        
+-  Hover - :hover
+
+- Transition Property : duration, timing-function, delay, property
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1::after {
+        content: "➡️🍔";
+      }
+      h1::before {
+        content: "⬅️🍕";
+      }
+      .box1 {
+        height: 150px;
+        width: 150px;
+        border: 1px solid red;
+        background-color: yellow;
+        /* transform:  rotate(90deg);
+        transform: scale(0.5); */
+        /* transform: skew(166deg); */
+        /* transform: translate(-50%, 50%); */
+      }
+      .box2 {
+        height: 150px;
+        width: 150px;
+        border: 1px solid rgb(0, 234, 255);
+        background-color: rgb(0, 255, 72);
+        transition: 5s;
+      }
+      .box2:hover {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        transform: rotate(1500deg);
+        border-radius: 50%;
+      }
+      .magicbox {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-name: magic;
+        animation-duration: 5s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: 2;
+
+      }
+
+      @keyframes magic {
+        from {
+          margin-left: 0;
+        }
+        to {
+          margin-left: 200px;
+          background-color: blue;
+          transform: rotate(1200deg);
+          border-radius: 50%;
+          margin-top:100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="magicbox"></div>
+  </body>
+</html>
