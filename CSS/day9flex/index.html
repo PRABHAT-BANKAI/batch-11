@@ -1,0 +1,86 @@
+<!-- 
+ Display Flex (Parent Property)Display: Flex FlexDirection (Row, Row Reverse, Column, Column Reverse)Flex Wrap (Nowrap, Wrap, Wrap Reverse)Flex Flow (Flex Direction Flex Wrap) -->
+
+<!-- Display Flex (Parent Property)Justify-Content (Flex-Start, Flex-End, Center, Space-Between, Space-Around, Space-Evenly)Align-Items (Stretch, Center, Flex-Start, Flex-End, Baseline)Align-Content (Stretch, Center, Flex-Start, Flex-End, Space-Between, Space-Around, Space-Evenly) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 500px;
+        background-color: yellow;
+        /* display flex is one dimentional yahh toh woh row yah toh woh column work krega */
+        display: flex;
+        /* justify-content: center; work on main axis(horizontally) */
+        /* justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+        /* justify-content: center;
+        align-items: center ;work on cross axis(vertically) */
+        /* align-items: stretch; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap;
+          flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* Flex Flow (Flex Direction Flex Wrap) */
+        /* flex-flow: column wrap ; */
+        /* align-items: baseline; */
+        /* flex-wrap: wrap;
+        align-content: center; */
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      }
+      .box1 {
+        background-color: green;
+      }
+      .box2 {
+        background-color: rgb(21, 131, 195);
+      }
+      .box3 {
+        background-color: rgb(196, 22, 83);
+      }
+      .box4 {
+        background-color: rgb(211, 108, 29);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox/flex_terms.png"
+      alt=""
+    />
+
+    <div class="container">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3 a</div>
+      <div class="box box4">box4 lkasjdf</div>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box1"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>
