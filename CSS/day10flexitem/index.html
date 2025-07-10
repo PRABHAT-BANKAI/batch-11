@@ -1,0 +1,66 @@
+<!-- 
+ Display Flex (Child Property)Flex-Basis, Flex-Grow, Flex-Shrink, Order Align-Self (Stretch, Center, Flex-Start, Flex-End, Baseline) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 600px;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+      }
+      .box {
+        width: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        align-self: flex-start;
+        /* flex-basis: 300px;   after display flex flex basis give width to flex item*/
+        /* flex-grow: 3; */
+        /* flex-shrink:  3; */
+      }
+      .box2 {
+        background-color: rgb(181, 26, 62);
+        /* flex-grow: 5; */
+        /* flex-shrink:  5; */
+        order: 5;
+        align-self: flex-end;
+      }
+      .box3 {
+        background-color: rgb(43, 96, 132);
+        align-self: center;
+      }
+      .box4 {
+        background-color: rgb(51, 107, 71);
+        /* flex-grow: 2; */
+        /* flex-shrink:  2; */
+        order: -1;
+        align-self: baseline;
+      }
+      .box5 {
+        background-color: rgb(187, 22, 115);
+        order: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        quidem cumque mollitia necessitatibus, quo minima harum voluptatibus
+        aliquid debitis nostrum fugiat autem laborum delectus, deleniti animi
+        cupiditate eveniet quod quibusdam.
+      </div>
+      <div class="box box5">5</div>
+    </div>
+  </body>
+</html>
