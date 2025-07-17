@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 70px;
+        background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        align-items: center;
+      }
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+      .menu {
+        display: none;
+      }
+
+      section {
+        width: 100%;
+        background-color: yellow;
+        height: calc(100vh - 70px);
+        display: flex;
+      }
+      .box1 {
+        width: 50%;
+        border: 1px solid black;
+        height: 100%;
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap :25px; */
+        padding: 25px;
+      }
+      .box2 {
+        width: 50%;
+        border: 1px solid black;
+        height: 100%;
+        background-color: orange;
+      }
+
+      .smallBox1 {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+      .smallBox2 {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+      .smallBox3 {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+
+      @media (max-width: 576px) {
+        .menu {
+          display: block;
+        }
+        nav {
+          display: none;
+        }
+
+        section {
+          flex-direction: column;
+        }
+        .box1,
+        .box2 {
+          width: 100%;
+        }
+
+        .box1 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <div class="menu">🎁</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <button>Get started</button>
+      </nav>
+    </header>
+    <section>
+      <div class="box1">
+        <div class="smallBox1"></div>
+        <div class="smallBox2"></div>
+        <div class="smallBox3"></div>
+      </div>
+      <div class="box2"></div>
+    </section>
+  </body>
+</html>
