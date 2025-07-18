@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Columns Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .column {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+      }
+
+      @media (max-width: 600px) {
+        .column {
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 900px) {
+        .column {
+          flex-basis: 45%;
+        }
+      }
+
+      @media (min-width: 901px) {
+        .column {
+          flex-basis: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Column Layout</h2>
+    <div class="row">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+      <div class="column">Column 3</div>
+      <div class="column">Column 4</div>
+      <div class="column">Column 5</div>
+      <div class="column">Column 5</div>
+      <div class="column">Column 5</div>
+      <div class="column">Column 5</div>
+    </div>
+  </body>
+</html>
