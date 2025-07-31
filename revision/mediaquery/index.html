@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 10%;
+      }
+      nav h1 {
+        display: inline;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      nav .hamburger-icon {
+        display: none;
+      }
+      .sec-1 {
+        height: calc(100vh - 70px);
+        border: 1px solid red;
+        display: flex;
+      }
+      .container-1,
+      .container-2 {
+        width: 50%;
+        height: 100%;
+        border: 1px solid blue;
+      }
+
+      @media (min-width: 250px) and (max-width: 576px) {
+        nav ul {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          background-color: #333;
+          top: 50px;
+          right: 0;
+          width: 100%;
+        }
+        nav ul li {
+          margin-right: 0;
+          padding: 10px 20px;
+        }
+        nav .hamburger-icon {
+          display: block;
+          cursor: pointer;
+        }
+        .sec-1 {
+          flex-direction: column;
+        }
+        .container-1,
+        .container-2 {
+          width: 100%;
+        }
+        .sec-1{
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>My Website</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger-icon">icon</div>
+    </nav>
+    <section class="sec-1">
+      <div class="container-1">
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple responsive navigation bar example.</p>
+      </div>
+      <div class="container-2">
+        <h3>Section 1</h3>
+        <p>
+          This section is designed to fill the viewport height minus the
+          navigation bar.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
