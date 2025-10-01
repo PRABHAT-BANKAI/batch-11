@@ -1,0 +1,83 @@
+<!-- 
+ 	
+Background Image, size, repeat, position, attachment
+
+- Types Of Gradient : Linear, Radial, Conic
+
+-Two class Property , Parent-child Property
+
+- Ex : Create Parallax Scrolling Effect -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 1px solid black;
+        width: 800px;
+        height: 400px;
+        background-image: url(./images/image.jpeg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .box2 {
+        border: 1px solid black;
+        width: 200px;
+        height: 400px;
+        /* background-color: rgb(30, 124, 89); */
+        background: linear-gradient(red, green, yellow, blue, purple);
+        background: radial-gradient(yellow, green, black, white);
+        background: conic-gradient(yellow, green, black, white);
+        background: radial-gradient(
+          circle,
+          rgba(251, 63, 76, 1) 21%,
+          rgba(213, 251, 63, 1) 38%,
+          rgba(251, 63, 235, 1) 68%,
+          rgba(252, 149, 70, 1) 84%
+        );
+      }
+
+      .box3 {
+        height: 500px;
+        width: 500px;
+        border: 1px solid green;
+        margin-top: 45px;
+      }
+      .card {
+        height: 250px;
+        width: 250px;
+        border: 1px solid red;
+
+        padding: 10px;
+        margin: auto;
+        margin-top: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background image</h1>
+    <div class="box">hello</div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut consequuntur
+      nulla rerum quo quae, ratione repellendus fugiat velit alias eos soluta et
+      rem porro molestias maiores, delectus nobis voluptates vitae?
+    </div>
+
+    <div class="box3">
+      <div class="card">
+        <p>Title: Adidas</p>
+        <p>Price: 12000</p>
+      </div>
+    </div>
+  </body>
+</html>

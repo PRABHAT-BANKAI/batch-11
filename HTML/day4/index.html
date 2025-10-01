@@ -1,0 +1,90 @@
+<!-- 
+ <Form> <Select> <Option> <Text Area><Button><Input Type=”Text, Email, Password, Tel, Color, Range, File, Date, Radio, Checkbox”/>Button Tag Attribute : Type=”Reset”, Type=”Submit”Required, Selected Attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form method="post">
+      <div>
+        <label for="userName">Name:</label>
+        <input
+          id="userName"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <label for="">Email:</label>
+        <input required type="email" placeholder="enter you email" />
+      </div>
+      <div>
+        <label for="">Password:</label>
+        <input type="password" />
+      </div>
+      <div>
+        <label for="">Phone:</label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-456-1234"
+        />
+      </div>
+
+      Color: <input type="color" />
+      <br />
+      Range: <input type="range" />
+      <br />
+      File Upload:<input type="file" multiple /> Date: <input type="date" />
+      <br />
+      Gender: <input name="gender" type="radio" /> Male
+      <input name="gender" type="radio" /> female
+      <br />
+
+      I agree: <input type="checkbox" />
+      <br />
+      <textarea name="" id="">Description:</textarea>
+      <br />
+
+      Games:
+      <select name="" id="">
+        <option value="gta6">GTA6</option>
+        <option selected value="csgo">CSGO</option>
+        <option value="volerent">Volerent</option>
+      </select>
+      <br />
+
+      <!-- type submit because of button create in form tag -->
+      <button>Submit</button>
+      <input type="button" value="Login" />
+      <input type="submit" value="LOGIN" />
+      <input type="reset" />
+      <input type="">
+    </form>
+    <button>Submit</button>
+
+    <h1>form 2</h1>
+
+    <form a method="post">
+      Name: <input name="userName" type="text" />
+      <button>Submit</button>
+    </form>
+
+
+  <form action="">
+    <table border="" width="500px">
+      <tr>
+        <td>Name:</td>
+        <td><input type="text"></td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>
