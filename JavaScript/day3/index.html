@@ -6,12 +6,26 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>Calculator</h1>
+<h2>Sum equation</h2>
+  <p id="text"> </p>
 
 
   <script>
     console.log("hello world")
+
+    let text = document.getElementById("text")
+    console.log(text)
+
+    let a = 15
+    let b = 33
+ 
+    text.innerHTML = a+b
+    text.innerHTML = 88
+    text.innerText = 99
+    text.innerText = "<h1>hello</h1>"
   </script>
-  <script src="./index.js"></script>
+
   
 </body>
 </html>
