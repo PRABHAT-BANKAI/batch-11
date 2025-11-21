@@ -55,6 +55,6 @@ function tableShow(number) {
 }
 
 for(let i=1;i<=20;i++){
-tableShow(i);
+tableShow(5);
 }
 

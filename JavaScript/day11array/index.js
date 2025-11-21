@@ -38,6 +38,9 @@ function count(num) {//2
     return;
   }
 
+
+
+  
   console.log(num);//2
 
   count(num + 1);//3
