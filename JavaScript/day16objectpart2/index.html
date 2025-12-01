@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Qoutes</h1>
+    <p id="text"></p>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+    <img id="image" src="" alt="" />
+
+    <script>
+      let text = document.getElementById("text");
+      let prev = document.getElementById("prev");
+      let next = document.getElementById("next");
+      let image = document.getElementById("image");
+
+      let count = 0;
+
+      let array = ["html", "javascript", "css", "react"];
+
+      let studentData = [
+        { userName: "batman", class: "12th" },
+        { userName: "superMan", class: "11th" },
+        { userName: "ironman", class: "10th" },
+      ];
+
+      function show(count) {
+        text.innerText = array[count];
+        image.src = "https://4kwallpapers.com/images/walls/thumbs_3t/20528.png";
+        image.style.height = "100px";
+        image.style.border = "10px solid black";
+      }
+
+      next.addEventListener("click", function () {
+        count++;
+        if (count == array.length) {
+          count = 0;
+        }
+        show(count);
+      });
+      prev.addEventListener("click", function () {
+        if (count == 0) {
+          count = array.length;
+        }
+        count--;
+        show(count);
+      });
+
+      window.addEventListener("load", () => {
+        show(count);
+      });
+    </script>
+  </body>
+</html>
