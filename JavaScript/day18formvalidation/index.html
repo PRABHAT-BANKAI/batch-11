@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for=""
+        >User Name
+        <input id="userText" type="text" placeholder="enter your userName" />
+      </label>
+      <p id="error3"></p>
+      <br />
+      <label for=""
+        >Email
+        <input id="emailText" type="email" placeholder="enter your email" />
+      </label>
+      <p id="error1"></p>
+      <br />
+      <label for=""
+        >Password
+        <input
+          id="passwordText"
+          type="password"
+          placeholder="enter your password"
+        />
+      </label>
+      <p id="error2"></p>
+
+      <button>Submit</button>
+    </form>
+
+    <script>
+      let emailText = document.querySelector("#emailText");
+      let passwordText = document.querySelector("#passwordText");
+      let userText = document.querySelector("#userText");
+      let form = document.querySelector("#form");
+
+      function emailValidation() {
+        let error1 = document.querySelector("#error1");
+        if (emailText.value === "") {
+          // alert("you have to write email first ")
+          error1.innerHTML = "invalid email ";
+          error1.style.color = "red";
+        } else {
+          error1.innerHTML = "";
+          error1.style.color = "";
+        }
+      }
+      function passwordValidation() {
+        let error2 = document.querySelector("#error2");
+        if (!passwordText.value.trim()) {
+          // alert("you have to write email first ")
+          error2.innerHTML = "invalid password ";
+          error2.style.color = "red";
+        } else {
+          error2.innerHTML = "";
+          error2.style.color = "";
+        }
+      }
+      function userNameValidation() {
+        let error3 = document.querySelector("#error3");
+        if (!userText.value.trim()) {
+          // alert("you have to write email first ")
+          error3.innerHTML = "invalid password ";
+          error3.style.color = "red";
+        } else {
+          error3.innerHTML = "";
+          error3.style.color = "";
+        }
+      }
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        emailValidation();
+        passwordValidation();
+        userNameValidation();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+
+    <form action="">
+      <div>
+        <label for=""> Name</label>
+        <input
+          class="inputText"
+          onkeyup="nameValidation()"
+          type="text"
+          placeholder="enter your name"
+        />
+        <p class="err-1"></p>
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input
+          onkeyup="emailValidation()"
+          class="emailText"
+          type="email"
+          placeholder="enter your email"
+        />
+        <p class="err-2"></p>
+      </div>
+      <div>
+        <label for="">Password</label>
+        <input
+          class="passwordText"
+          type="password"
+          placeholder="enter your password"
+        />
+        <p class="err-3"></p>
+      </div>
+      <button>Submit</button>
+    </form>
+
+    <script>
+      function nameValidation() {
+        let userName = document.querySelector(".inputText").value;
+        let err1 = document.querySelector(".err-1");
+        if (!userName.trim()) {
+          err1.innerText = "invalid name";
+          err1.style.color = "red";
+        } else {
+          err1.innerText = "";
+        }
+      }
+
+      function emailValidation() {
+        let emailText = document.querySelector(".emailText").value;
+        let err2 = document.querySelector(".err-2");
+        if (!emailText.trim()) {
+          err2.innerText = "invalid Email";
+          err2.style.color = "red";
+        } else {
+          err2.innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>
